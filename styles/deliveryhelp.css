@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* ***************Header starts here ********************* */
+nav {
+  background-color: #002758;
+  display: flex;
+  justify-content: center;
+}
+.logo-img-wrap {
+  width: 192px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* *****************Header ends here ************************ */
+
+/* *********Delivery Help sec starts here */
+
+.delivery-help-sec {
+  padding: 30px 0px;
+}
+.delivery-help-card {
+  background-color: #002758;
+  color: #fff;
+  padding: 20px 30px;
+  border: 3px solid #f96903;
+  border-radius: 10px;
+}
+
+.card-title-lg {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.card-title-sm {
+  font-size: 20px;
+}
+.text-center {
+  text-align: center;
+}
+.bg-orange {
+  background-color: #f96903;
+}
+.input-icon > span {
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: block;
+}
+.input-wrapper {
+  display: flex;
+}
+.search-order {
+  display: block;
+  width: 100%;
+  border: 2px solid #f96903;
+  font-size: 18px;
+  padding: 5px;
+}
+.btn {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10px;
+}
+.btn-red {
+  background-color: rgb(168, 60, 60);
+}
+.btn-blue {
+  background-color: #2299c0;
+}
+.order-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-item-wrap > a {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: block;
+}
+
+.order-item-wrap a img {
+  width: 100%;
+  height: 100%;
+}
+.order-item-wrap > a[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -70%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.863);
+  color: #fff;
+  padding: 10px;
+}
+.order-lookup-card {
+  position: relative;
+  display: flex;
+  background-color: white;
+  color: #333;
+  justify-content: space-between;
+  padding: 20px 5px;
+  align-items: center;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 2px solid #f96903;
+}
+
+.order-lookup-card > div {
+  padding: 0 5px;
+}
+.order-info {
+  font-weight: bold;
+}
+.order-info span {
+  font-weight: normal;
+}
+.order-btns > a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+hr {
+  border-top: 2px dashed #fff;
+  border-bottom: none;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+}
+.details {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0px;
+  width: 100%;
+}
+.money-trans-row {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-around;
+}
+.money-trans-row > div {
+  padding: 20px;
+}
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.transaction-log {
+  background-color: #002758;
+  border: 3px solid #f96903;
+  border-radius: 10px;
+  height: 250px;
+  overflow: auto;
+}
+.transaction-log > p {
+  color: green;
+}
+.transaction-log > p:last-child {
+  margin-bottom: 30px;
+}
+/* ******Delivery help sec ends here  */
+/* **********Footer starts here *********************** */
+footer {
+  background-color: #002758;
+  padding: 50px 0px;
+}
+footer > p {
+  color: #fff;
+}
+.footer-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.footer-link {
+  color: #fff;
+}
+.footer-link > a {
+  color: #f96903;
+}
+/* ********************Footer ends here ********************** */
+
+@media (max-width: 768px) {
+  .order-lookup-card {
+    flex-direction: column;
+    padding: 35px 0px;
+  }
+  .order-items {
+    justify-content: center;
+  }
+  .order-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: orange;
+    padding: 5px;
+    border-bottom-right-radius: 20px;
+    font-size: 25px;
+  }
+  .money-trans-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    padding: 0;
+  }
+  .delivery-help-card {
+    padding: 20px 15px;
+  }
+}
